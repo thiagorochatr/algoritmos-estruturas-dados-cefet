@@ -141,14 +141,12 @@ int main() {
     printf("Lista 2: ");
     printList(J_order);
     List *K = join(L_order, J_order);
-    List *K_order = order(K);
     printf("Fusão: ");
-    printList(K_order);
+    printList(K);
     free(L);
     free(J);
     free(K);
     free(L_order);
     free(J_order);
-    free(K_order);
     return 0;
 }
